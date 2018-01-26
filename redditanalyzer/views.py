@@ -4,7 +4,6 @@ from forms import ChoiceForm
 import feedparser
 
 
-
 def home(request):
     form = ChoiceForm(request.POST or None)
 
@@ -24,7 +23,7 @@ def home(request):
         return render_to_response("results/utopian-io-reddit-feed.html", c)
 
     c = {"request": request,
-         "login_form": form}
+         "form": form}
 
     c.update(csrf(request))
 
