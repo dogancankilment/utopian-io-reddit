@@ -20,5 +20,5 @@ Technology Stack
 - Minimum Django 1.4.8
 - Python 2.7.x
 - Feedparser (from Python)
-- Apache Web Server
+- Apache2 Web Server
 - css3 / html5 / bootstrap static files
