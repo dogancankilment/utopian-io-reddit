@@ -22,3 +22,10 @@ Technology Stack
 - Feedparser (from Python)
 - Apache2 Web Server
 - css3 / html5 / bootstrap static files
+
+Apache2 config and wsgi files finally done on cloud droplet.
+This project live at;
+http://utopian-io-reddit.duckdns.org/
+
+Using duckdns.org subdomain free domain service. If you interest my project, you can do donate for hosting and domain costs.
+Thanks for all.
