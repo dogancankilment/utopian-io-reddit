@@ -15,3 +15,10 @@ Futures
 - To be able to pass the created shares over specific filters and create analysis visuals and graphs. (Maybe author's nationality, tags, content types.
 
 Able to be extended with your ideas or suggestions.
+
+Technology Stack
+- Minimum Django 1.4.8
+- Python 2.7.x
+- Feedparser (from Python)
+- Apache Web Server
+- css3 / html5 / bootstrap static files
