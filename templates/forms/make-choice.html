@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-        <title>Reddit Analyzer</title>
+        <title>Reddit Analysis</title>
 
         <meta name="description" content="utopian.io/@dogancankilment">
         <meta name="author" content="utopian.io/@dogancankilment">
@@ -42,18 +42,19 @@
                         </div>
                         <div class="row justify-content-center px-5">
                             <div class="col-sm-8 col-md-6 col-xl-4">
-                                <form method="POST" action="/" class="form-signin" role="form">
-                                    <p>Analyze <br/>
-                                        https://www.reddit.com/r/utopianio/
-                                    </p>
-
-                                    <h6>RSS Feed Result Filter</h6>
-
-                                    <select class="form-control" id="example-select" name="example-select">
-                                        {% for choice in form.status.field.choices %}
-                                            <option id="{{ choice.0 }}" name="{{ choice.0 }}" value="{{ choice.0 }}">{{ choice.1 }}</option>
-                                        {% endfor %}
-                                    </select>
+                                <form method="POST" action="/redditanalysis" class="form-signin" role="form">
+                                    <h6>Analysis</h6>
+                                    <div>
+                                        <p>Enter Full URL
+                                            <input placeholder="https://www.reddit.com/r/utopianio/" type="text" id="query_url" name="query_url" style="width: 100%"/>
+                                        </p>
+                                        <h6>RSS Feed Result Filter</h6>
+                                        <select class="form-control" id="example-select" name="example-select">
+                                            {% for choice in form.status.field.choices %}
+                                                <option id="{{ choice.0 }}" name="{{ choice.0 }}" value="{{ choice.0 }}">{{ choice.1 }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
                                     <br/>
 
                                     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}" />
@@ -70,6 +71,10 @@
                                         </ul>
                                     {% endif %}
                                 </form>
+                                <p>If you want your query url to be saved by us for query statistics program, please
+                                    <a href="/login">login</a> or
+                                    <a href="/register">register</a>.</p>
+                                Or, want to be anonymous. You are free. Your query not saved by us.
                             </div>
                         </div>
                     </div>
