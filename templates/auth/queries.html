@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lte IE 9]>     <html lang="en" class="no-focus lt-ie10 lt-ie10-msg"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-focus"> <!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+        <title>Entry Results</title>
+
+        <meta name="description" content="utopian.io/@dogancankilment">
+        <meta name="author" content="utopian.io/@dogancankilment">
+        <meta name="robots" content="noindex, nofollow">
+
+        <meta property="og:title" content="utopian.io/@dogancankilment">
+        <meta property="og:site_name" content="utopian.io/@dogancankilment">
+        <meta property="og:description" content="utopian.io/@dogancankilment">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <link rel="shortcut icon" href="{{STATIC_URL}}static/thor.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{STATIC_URL}}static/img/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{STATIC_URL}}static/img/favicons/apple-touch-icon-180x180.png">
+
+        <link rel="stylesheet" id="css-main" href="{{STATIC_URL}}static/css/codebase.min.css">
+        <link rel="stylesheet" href="{{STATIC_URL}}static/js/plugins/datatables/dataTables.bootstrap4.min.css">
+
+    </head>
+    <body>
+        <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxed">
+
+            <header id="page-header">
+                <div class="content-header">
+                    <div class="content-header-section">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown-menu" aria-labelledby="page-header-options-dropdown">
+
+                            </div>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <div class="dropdown-menu min-width-150" aria-labelledby="page-header-themes-dropdown">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-header-section">
+                        <div class="btn-group" role="group">
+                            <ul class="list-inline mt-10">
+                                    <li class="list-inline-item">
+                                        <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="/">
+                                        Home</a>
+                                    </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main id="main-container">
+                <div class="content">
+                    <div class="block">
+                        <div class="block-header block-header-default">
+                            <h3 class="block-title"></h3>
+                        </div>
+                        <div class="block-content block-content-full">
+                            <table class="table table-bordered table-striped table-vcenter js-dataTable-simple" style=" table-layout:fixed; width:100%;">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% for q in all_queries %}
+                                    <tr>
+                                        <td class="d-none d-sm-table-cell">{{ q.url }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer id="page-footer" class="opacity-0">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-left">
+                        <a class="font-w600" href="https://utopian.io/@dogancankilment" target="_blank">DCK dogancankilment</a><br>
+                        Thor Icon Downloaded
+                        <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                        is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="{{STATIC_URL}}static/js/core/jquery.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/popper.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/bootstrap.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/jquery.slimscroll.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/jquery.scrollLock.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/jquery.appear.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/jquery.countTo.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/core/js.cookie.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/codebase.js"></script>
+
+        <!-- Page JS Plugins -->
+        <script src="{{STATIC_URL}}static/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <!-- Page JS Plugins -->
+        <script src="{{STATIC_URL}}static/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="{{STATIC_URL}}static/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="{{STATIC_URL}}static/js/pages/be_tables_datatables.js"></script>
+    </body>
+</html>
