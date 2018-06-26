@@ -27,5 +27,10 @@ Apache2 config and wsgi files finally done on cloud droplet.
 This project live at;
 http://utopian-io-reddit.duckdns.org/
 
+Features:
+# v1.1 Reddit Analysis Auth
+- Authentication and user profile structure added.
+- Created queries are being recorded.
+
 Using duckdns.org subdomain free domain service. If you interest my project, you can do donate for hosting and domain costs.
 Thanks for all.
